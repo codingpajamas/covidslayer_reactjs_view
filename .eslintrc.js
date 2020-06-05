@@ -34,8 +34,9 @@ module.exports = {
             "always"
         ],
         "react/jsx-uses-vars": 1,
-        "no-console": 1,
+        "no-console": 0,
         "linebreak-style": 0,
         "no-mixed-spaces-and-tabs": 0,
+        'no-unused-vars': 0
     }
 };

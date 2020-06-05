@@ -43,9 +43,7 @@ class Battle extends React.Component {
     }
   }
 
-  componentDidMount() {
-    console.log('Battle mounted')
-    
+  componentDidMount() {    
     this.setState(state => ({
       logs: [this.props.battleLog, ...state.logs]
     }));
@@ -63,8 +61,7 @@ class Battle extends React.Component {
     form.append('type', type);
 
     axios.post(`${API}/${typeUrl}?_token=${this.props.token}`, form)
-      .then((response) => {
-        console.log(response)
+      .then((response) => { 
         if(response.data.userAtk){
           this.setState(state => ({
             logs: [response.data.userAtk.details, ...state.logs],
