@@ -9,7 +9,7 @@
   "dependencies": {
     "axios": "0.17.1",
     "cookie-parser": "1.4.3",
-    "express": "4.14.0",
+    "express": "4.17.3",
     "form-data": "^3.0.0",
     "js-cookie": "2.2.0",
     "next": "7.0.2",
